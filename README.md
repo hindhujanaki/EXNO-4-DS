@@ -55,6 +55,7 @@ sc=StandardScaler()
 df[['Height','Weight']]=sc.fit_transform(df[['Height','Weight']])
 df.head(10)
 ```
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/89c7d9b2-0a03-4b8c-8551-4edec1f07e7d)
 
 ```
 from sklearn.preprocessing import MinMaxScaler
@@ -62,6 +63,7 @@ sc=MinMaxScaler()
 df[['Height','Weight']]=sc.fit_transform(df[['Height','Weight']])
 df.head(10)
 ```
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/018758cc-322b-4ba3-812a-a2830813c89b)
 
 ```
 from sklearn.preprocessing import Normalizer
@@ -69,6 +71,7 @@ Scaler=Normalizer
 df[['Height','Weight']]=sc.fit_transform(df[['Height','Weight']])
 df
 ```
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/548f24d7-0fec-4e92-bb40-f678cb55c111)
 
 ```
 df=pd.read_csv("/content/bmi.csv")
@@ -79,6 +82,7 @@ scaler = MaxAbsScaler()
 df[['Height','Weight']]=sc.fit_transform(df[['Height','Weight']])
 df
 ```
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/c62d9316-5b94-4de0-828f-8c1204a21b0f)
 
 
 ## Feature Selection
@@ -149,7 +153,8 @@ print(columns_list)
 features=list(set(columns_list)-set(['SalStat']))
 print(features)
 ```
-![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/0246e5a0-e235-4656-95e7-2de12a0ff750)
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/249acca0-5e5f-440c-9b31-b02a29252d93)
+
 
 ```
 y=new_data['SalStat'].values

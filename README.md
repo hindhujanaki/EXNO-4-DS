@@ -85,7 +85,9 @@ scaler = MaxAbsScaler()
 df[['Height','Weight']]=sc.fit_transform(df[['Height','Weight']])
 df
 ```
-![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/c62d9316-5b94-4de0-828f-8c1204a21b0f)
+
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/f109afda-f1c1-4498-ad5f-0bebc08ba4c8)
+
 
 
 ## Feature Selection
@@ -105,7 +107,6 @@ data
 ```
 ![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/f5497f67-2cfa-4bd5-9656-a4d62b90bca1)
 
-![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/af169232-e1b2-46d5-90a4-e7361b1fc5c5)
 
 ```
 data.isnull().sum()
@@ -117,32 +118,36 @@ data.isnull().sum()
 missing = data[data.isnull().any(axis=1)]
 missing
 ```
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/dbabf06c-2f93-46c2-93a7-62a12c5aecb4)
 
-![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/f28637fa-027f-48b3-b239-7be6132ac813)
 
 ```
 data2=data.dropna(axis=0)
 data2
 ```
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/085bae1f-8a79-4132-ac59-b6d23ce0398f)
 
 ```
 sal=data['SalStat']
 data2['SalStat']=data2['SalStat'].map({' less than or equal to 50,000':0,' greater than 50,000':1})
 print(data2['SalStat'])
 ```
-![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/2cb5b78d-77d8-456a-a7a6-5426f8c14ee0)
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/e0cc24a6-de56-4cfc-a5e5-d89515bf85be)
+
 
 ```
 sal2=data2['SalStat']
 dfs=pd.concat([sal,sal2],axis=1)
 dfs
 ```
-![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/0733c032-e577-421c-aaea-bb0207d76571)
+
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/6d1f9aff-baf3-4204-a92a-6bef1d7a0bac)
 
 ```
 data2
 ```
-![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/46ce2eac-c2b0-4442-8fab-1cf438d00a55)
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/d5047372-9659-4f30-907d-93f8b6a0fcec)
+
 
 ```
 new_data=pd.get_dummies(data2, drop_first=True)

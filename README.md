@@ -36,11 +36,14 @@ import pandas as pd
 df=pd.read_csv("/content/bmi.csv")
 df
 ```
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/d6a7e0d0-3a08-4331-8beb-2e10ce587be9)
+
 ![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/d021050b-e88c-405a-93d7-2eda73b806ef)
 ```
 df.head()
 ```
 
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/d021050b-e88c-405a-93d7-2eda73b806ef)
 
 ```
 import numpy as np
@@ -100,17 +103,21 @@ from sklearn.metrics import accuracy_score,confusion_matrix
 data = pd.read_csv("/content/income(1) (1).csv")
 data
 ```
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/f5497f67-2cfa-4bd5-9656-a4d62b90bca1)
+
 ![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/af169232-e1b2-46d5-90a4-e7361b1fc5c5)
 
 ```
 data.isnull().sum()
 ```
-![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/41ff0cb0-95cc-4f9d-8bd2-ee9cbcff961a)
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/af169232-e1b2-46d5-90a4-e7361b1fc5c5)
+
 
 ```
 missing = data[data.isnull().any(axis=1)]
 missing
 ```
+
 ![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/f28637fa-027f-48b3-b239-7be6132ac813)
 
 ```

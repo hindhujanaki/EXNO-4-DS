@@ -38,7 +38,7 @@ df
 ```
 ![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/d6a7e0d0-3a08-4331-8beb-2e10ce587be9)
 
-![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/d021050b-e88c-405a-93d7-2eda73b806ef)
+
 ```
 df.head()
 ```

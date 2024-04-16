@@ -36,11 +36,11 @@ import pandas as pd
 df=pd.read_csv("/content/bmi.csv")
 df
 ```
-
+![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/d021050b-e88c-405a-93d7-2eda73b806ef)
 ```
 df.head()
 ```
-![image](https://github.com/hindhujanaki/EXNO-4-DS/assets/148514666/d021050b-e88c-405a-93d7-2eda73b806ef)
+
 
 ```
 import numpy as np
